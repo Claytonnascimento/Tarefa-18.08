@@ -1,0 +1,55 @@
+# Faça um programa que leia dois números e mostre qual é o maior.
+
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+if n1 > n2:
+    print(f"O maior número é: {n1}")
+elif n2 > n1:
+    print(f"O maior número é: {n2}")
+else:
+    print("Os números são iguais.")
+
+
+# Faça um programa que leia dois números e mostre qual é o maior.
+
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+if n1 > n2:
+    print(f"O maior número é: {n1}")
+elif n2 > n1:
+    print(f"O maior número é: {n2}")
+else:
+    print("Os números são iguais.")
+
+
+# Crie uma função que verifique se um número é primo.
+
+def eh_primo(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+num = int(input("Digite um número: "))
+if eh_primo(num):
+    print(f"{num} é primo.")
+else:
+    print(f"{num} não é primo.")
+
+
+# Desenvolva um programa que leia uma lista de números e mostre a média deles.
+
+numeros = []
+
+qtd = int(input("Quantos números deseja digitar? "))
+
+for i in range(qtd):
+    n = float(input(f"Digite o {i+1}º número: "))
+    numeros.append(n)
+
+media = sum(numeros) / len(numeros)
+print(f"A média dos números é: {media}")
